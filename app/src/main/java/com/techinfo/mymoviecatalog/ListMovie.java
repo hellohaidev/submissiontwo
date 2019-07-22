@@ -1,10 +1,8 @@
 package com.techinfo.mymoviecatalog;
 
 import android.content.Context;
-import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,17 +17,17 @@ import java.util.ArrayList;
 public class ListMovie extends RecyclerView.Adapter<ListMovie.CategoryViewHolder> {
     
     private Context context;
-    private ArrayList<MovieData> movieData;
+    private ArrayList<Movie> movieData;
     
     public ListMovie(Context context) {
         this.context = context;
     }
     
-    public ArrayList<MovieData> getMovieData() {
+    public ArrayList<Movie> getMovieData() {
         return movieData;
     }
     
-    public void setMovieData(ArrayList<MovieData> movieList) {
+    public void setMovieData(ArrayList<Movie> movieList) {
         this.movieData = movieList;
     }
     

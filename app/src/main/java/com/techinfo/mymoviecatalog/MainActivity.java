@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tabLayout);
         
         adapter = new TabAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Movie(),"Movie");
+        adapter.addFragment(new MovieFragmnet(),"Movie");
         adapter.addFragment(new TvShowFragment(),"Tv Show");
         
         viewPager.setAdapter(adapter);
